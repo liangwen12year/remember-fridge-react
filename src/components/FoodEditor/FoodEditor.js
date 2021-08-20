@@ -481,7 +481,7 @@ class FoodEditor extends React.Component {
           <Fields>
             <TextField
               id="name"
-              labelText="Item name"
+              labelText="Project name"
               editField={this.editField}
               value={name}
               isRequired={true}
@@ -489,7 +489,13 @@ class FoodEditor extends React.Component {
             />
             <TextField
               id="quantity"
-              labelText="Quantity"
+              labelText="Study number"
+              editField={this.editField}
+              value={quantity}
+            />
+            <TextField
+              id="description"
+              labelText="Description"
               editField={this.editField}
               value={quantity}
             />
@@ -508,6 +514,24 @@ class FoodEditor extends React.Component {
               value={expires}
               ref={this.expDatePicker}
               missing={false}
+            />
+            <TextField
+              id="scientist"
+              labelText="Scientist initial"
+              editField={this.editField}
+              value={quantity}
+            />
+            <TextField
+              id="fridge"
+              labelText="Fridge/Freezer ID"
+              editField={this.editField}
+              value={quantity}
+            />
+            <TextField
+              id="location"
+              labelText="Location ( Shelf, Rack, Draw)"
+              editField={this.editField}
+              value={quantity}
             />
           </Fields>
           <ButtonBlock
