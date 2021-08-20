@@ -243,25 +243,25 @@ const TextField = ({
   isRequired,
   nameMissing
 }) => (
-  <FieldItem missing={nameMissing}>
-    <label htmlFor={id}>
-      {labelText}
-      <span className="req" style={{ display: !isRequired ? "none" : "" }}>
-        *
+    <FieldItem missing={nameMissing}>
+      <label htmlFor={id}>
+        {labelText}
+        <span className="req" style={{ display: !isRequired ? "none" : "" }}>
+          *
       </span>
-    </label>
-    <div className="inputStyle">
-      <input
-        type="text"
-        id={id}
-        name={id}
-        placeholder={labelText}
-        onChange={editField}
-        value={value}
-      />
-    </div>
-  </FieldItem>
-);
+      </label>
+      <div className="inputStyle">
+        <input
+          type="text"
+          id={id}
+          name={id}
+          placeholder={labelText}
+          onChange={editField}
+          value={value}
+        />
+      </div>
+    </FieldItem>
+  );
 
 const DateField = React.forwardRef((props, ref) => {
   const { labelText, id, value, isRequired, dateMissing } = props;
