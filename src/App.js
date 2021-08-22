@@ -22,6 +22,7 @@ class App extends React.Component {
     added: "",
     scientist: "",
     fridge: "",
+    location: "",
     category: "fridge"
   };
   state = {

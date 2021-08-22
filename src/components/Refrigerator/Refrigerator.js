@@ -28,6 +28,7 @@ const Refrigerator = ({
         added={item.added}
         scientist={item.scientist}
         fridge={item.fridge}
+        location={item.location}
         deleteThis={deleteItem}
         editThis={openEditor}
       />
