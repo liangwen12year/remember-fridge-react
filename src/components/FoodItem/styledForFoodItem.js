@@ -231,7 +231,7 @@ const EditButtons = styled.nav`
   }
 `;
 
-const CardBack = ({ name, quantity, added, expires, children }) => {
+const CardBack = ({ name, quantity, added, children }) => {
   const truncatedName =
     name.length >= 30 ? `${name.substring(0, 30)}...` : name;
   return (
@@ -244,16 +244,8 @@ const CardBack = ({ name, quantity, added, expires, children }) => {
           {added}
         </div>
       ) : (
-        ""
-      )}
-      {expires ? (
-        <div className="dates">
-          <img className="expireIcon" src={expireIcon} alt="" />
-          {expires}
-        </div>
-      ) : (
-        ""
-      )}
+          ""
+        )}
       {children}
     </Back>
   );

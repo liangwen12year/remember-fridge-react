@@ -328,7 +328,6 @@ class FoodEditor extends React.Component {
     error: false
   };
   addDatePicker = React.createRef();
-  expDatePicker = React.createRef();
   closeEditor = () => {
     const editorLaunchedIn = this.props.editorLaunchIn;
     const currentFridgeState = this.props.currentSection;
@@ -368,10 +367,6 @@ class FoodEditor extends React.Component {
       onChange: this.onChangeDate,
       dateFormat: "F j, Y"
     });
-    flatpickr(this.expDatePicker.current, {
-      onChange: this.onChangeDate,
-      dateFormat: "F j, Y"
-    });
   }
   changeSection = e => {
     this.props.sectionChange(e.target);
@@ -408,8 +403,7 @@ class FoodEditor extends React.Component {
         img = "",
         quantity = "",
         name = "",
-        added = "",
-        expires = ""
+        added = ""
       },
       isOpen,
       editorMode,
@@ -506,14 +500,6 @@ class FoodEditor extends React.Component {
               value={added}
               ref={this.addDatePicker}
               missing={this.state.addedDateMissing}
-            />
-            <DateField
-              id="expires"
-              labelText="Expires on"
-              isRequired={false}
-              value={expires}
-              ref={this.expDatePicker}
-              missing={false}
             />
             <TextField
               id="scientist"

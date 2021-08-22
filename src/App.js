@@ -19,7 +19,6 @@ class App extends React.Component {
     quantity: "",
     name: "",
     added: "",
-    expires: "",
     category: "fridge"
   };
   state = {
@@ -141,7 +140,7 @@ class App extends React.Component {
   };
   componentDidMount() {
     // eslint-disable-next-line
-    (function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+    (function (l) { var i, s = { touchend: function () { } }; for (i in s) l.addEventListener(i, s) })(document); // sticky hover fix in iOS
     if (this.localStorageIsAvailable("myFridgeShoppingList")) {
       this.setState(
         {
@@ -154,14 +153,14 @@ class App extends React.Component {
         () => {
           document.body.className = `${
             this.state.darkMode ? "darkMode" : "lightMode"
-          }`;
+            }`;
         }
       );
     } else {
       this.setLocalStorage();
       document.body.className = `${
         this.state.darkMode ? "darkMode" : "lightMode"
-      }`;
+        }`;
     }
   }
   saveChanges = () => {

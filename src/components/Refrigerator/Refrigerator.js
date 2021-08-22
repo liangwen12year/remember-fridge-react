@@ -25,7 +25,6 @@ const Refrigerator = ({
         name={item.name}
         category={item.category}
         added={item.added}
-        expires={item.expires}
         deleteThis={deleteItem}
         editThis={openEditor}
       />
@@ -40,8 +39,8 @@ const Refrigerator = ({
           {totalItems !== 0 ? (
             itemsInTheCategory
           ) : (
-            <Nothingness category={category} />
-          )}
+              <Nothingness category={category} />
+            )}
         </div>
       </FridgeShell>
       <SideNavBar
