@@ -27,6 +27,7 @@ const Refrigerator = ({
         category={item.category}
         added={item.added}
         scientist={item.scientist}
+        fridge={item.fridge}
         deleteThis={deleteItem}
         editThis={openEditor}
       />

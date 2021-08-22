@@ -405,7 +405,8 @@ class FoodEditor extends React.Component {
         description = "",
         name = "",
         added = "",
-        scientist = ""
+        scientist = "",
+        fridge = ""
       },
       isOpen,
       editorMode,
@@ -513,7 +514,7 @@ class FoodEditor extends React.Component {
               id="fridge"
               labelText="Fridge/Freezer ID"
               editField={this.editField}
-              value={quantity}
+              value={fridge}
             />
             <TextField
               id="location"

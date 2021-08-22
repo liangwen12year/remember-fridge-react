@@ -232,7 +232,7 @@ const EditButtons = styled.nav`
   }
 `;
 
-const CardBack = ({ name, quantity, description, added, scientist, children }) => {
+const CardBack = ({ name, quantity, description, added, scientist, fridge, children }) => {
   const truncatedName =
     name.length >= 30 ? `${name.substring(0, 30)}...` : name;
   return (
@@ -249,6 +249,7 @@ const CardBack = ({ name, quantity, description, added, scientist, children }) =
           ""
         )}
       {scientist ? <h2>{scientist}</h2> : ""}
+      {fridge ? <h2>{fridge}</h2> : ""}
       {children}
     </Back>
   );

@@ -10,11 +10,11 @@ import {
 
 const FoodItem = props => {
   const [deleteModal, setDeleteModal] = useState(false);
-  const { img, name, quantity, description, added, scientist, editThis } = props;
+  const { img, name, quantity, description, added, scientist, fridge, editThis } = props;
   return (
     <FoodCard cancelModal={() => setDeleteModal(false)}>
       <CardFront img={img} name={name} quantity={quantity} description={description} />
-      <CardBack name={name} quantity={quantity} description={description} added={added} scientist={scientist}>
+      <CardBack name={name} quantity={quantity} description={description} added={added} scientist={scientist} fridge={fridge}>
         <EditButtons>
           <button className="edit" onClick={() => editThis(props)}>
             Edit
