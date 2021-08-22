@@ -402,6 +402,7 @@ class FoodEditor extends React.Component {
       currentItem: {
         img = "",
         quantity = "",
+        description = "",
         name = "",
         added = ""
       },
@@ -491,7 +492,7 @@ class FoodEditor extends React.Component {
               id="description"
               labelText="Description"
               editField={this.editField}
-              value={quantity}
+              value={description}
             />
             <DateField
               id="added"

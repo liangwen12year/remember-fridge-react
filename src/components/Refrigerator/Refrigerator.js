@@ -23,6 +23,7 @@ const Refrigerator = ({
         img={item.img}
         quantity={item.quantity}
         name={item.name}
+        description={item.description}
         category={item.category}
         added={item.added}
         deleteThis={deleteItem}

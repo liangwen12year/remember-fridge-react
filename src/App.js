@@ -17,6 +17,7 @@ class App extends React.Component {
   blankItemState = {
     img: "",
     quantity: "",
+    description: "",
     name: "",
     added: "",
     category: "fridge"

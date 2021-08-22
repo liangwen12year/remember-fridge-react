@@ -114,11 +114,12 @@ const Front = styled.div`
   }
 `;
 
-const CardFront = ({ img, name, quantity }) => (
+const CardFront = ({ img, name, quantity, description }) => (
   <Front>
     <img src={img || foodIcon} alt={name} />
     {name ? <h2>{name}</h2> : ""}
     {quantity ? <span className="quantity">{quantity}</span> : ""}
+    {description ? <h2>{description}</h2> : ""}
   </Front>
 );
 
@@ -231,13 +232,14 @@ const EditButtons = styled.nav`
   }
 `;
 
-const CardBack = ({ name, quantity, added, children }) => {
+const CardBack = ({ name, quantity, description, added, children }) => {
   const truncatedName =
     name.length >= 30 ? `${name.substring(0, 30)}...` : name;
   return (
     <Back>
       {name ? <h2>{truncatedName}</h2> : ""}
       {quantity ? <span className="quantity">{quantity}</span> : ""}
+      {description ? <h2>{description}</h2> : ""}
       {added ? (
         <div className="dates">
           <img className="addedIcon" src={addIcon} alt="" />
