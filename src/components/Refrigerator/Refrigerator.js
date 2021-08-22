@@ -26,6 +26,7 @@ const Refrigerator = ({
         description={item.description}
         category={item.category}
         added={item.added}
+        scientist={item.scientist}
         deleteThis={deleteItem}
         editThis={openEditor}
       />

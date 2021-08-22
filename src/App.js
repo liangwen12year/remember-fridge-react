@@ -20,6 +20,7 @@ class App extends React.Component {
     description: "",
     name: "",
     added: "",
+    scientist: "",
     category: "fridge"
   };
   state = {
