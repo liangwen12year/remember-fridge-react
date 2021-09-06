@@ -32,8 +32,7 @@ const Refrigerator = ({
         deleteThis={deleteItem}
         editThis={openEditor}
       />
-    ))
-    .reverse();
+    )).reverse();
   const totalItems = itemsInTheCategory.length;
   return (
     <div style={{ position: "relative", display: "flex" }}>

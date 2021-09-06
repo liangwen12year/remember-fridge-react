@@ -29,7 +29,20 @@ const AddFood = props => (
       <img src={addIcon} alt="" style={{ marginRight: "10px" }} />
       Add a new item
     </Button>
-  </div>
+    < table className="table" >
+      <thead className="table-header">
+        <tr>
+          <th class="freezerTableEntry" width="200px" align="center"> Project name </th>
+          <th class="freezerTableEntry" width="200px" align="center"> Study number </th>
+          <th class="freezerTableEntry" width="550px" align="center"> Description </th>
+          <th class="freezerTableEntry" width="180px" align="center"> Date </th>
+          <th class="freezerTableEntry" width="150px" align="center">Scientist </th>
+          <th class="freezerTableEntry" width="100px" align="center" height="auto"> Fridge/   Freeze ID</th>
+          <th class="freezerTableEntry" width="100px" align="center"> Location </th>
+        </tr>
+      </thead>
+    </table >
+  </div >
 );
 
 export default AddFood;

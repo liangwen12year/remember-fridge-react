@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, Fragment } from "react";
 import {
   FoodCard,
   CardFront,
@@ -7,46 +7,29 @@ import {
   DeleteConfirmModal,
   DeleteConfirmBtns
 } from "./styledForFoodItem";
-
 const FoodItem = props => {
   const [deleteModal, setDeleteModal] = useState(false);
   const { img, name, quantity, description, added, scientist, fridge, location, editThis } = props;
+
   return (
-    <FoodCard cancelModal={() => setDeleteModal(false)}>
-      <CardFront img={img} name={name} quantity={quantity} description={description} />
-      <CardBack name={name} quantity={quantity} description={description} added={added} scientist={scientist} fridge={fridge} location={location}>
-        <EditButtons>
-          <button className="edit" onClick={() => editThis(props)}>
-            Edit
-          </button>
-          <button
-            className="delete"
-            onClick={() => setDeleteModal(!deleteModal)}
-          >
-            Delete
-          </button>
-        </EditButtons>
-        <DeleteConfirmModal deleting={deleteModal}>
-          <h4>Delete this item?</h4>
-          <h6>{name}</h6>
-          <DeleteConfirmBtns>
-            <button
-              className="deleteYes"
-              onClick={() => props.deleteThis(props.id)}
-            >
-              Yes<span>delete it</span>
-            </button>
-            <button
-              className="deleteNo"
-              onClick={() => setDeleteModal(!deleteModal)}
-            >
-              No<span>keep it</span>
-            </button>
-          </DeleteConfirmBtns>
-        </DeleteConfirmModal>
-      </CardBack>
-    </FoodCard>
+    <div class="freezerTable">
+      < table className="table" >
+
+        < tbody className="table-body" >
+          <tr className="table-row" width="800px">
+            <td class="freezerTableEntry" width="200px" align="center" > {name} </td>
+            <td class="freezerTableEntry" width="200px" align="center"> {quantity} </td>
+            <td class="freezerTableEntry" width="550px" align="center"> {description} </td>
+            <td class="freezerTableEntry" width="180px" align="center"> {added} </td>
+            <td class="freezerTableEntry" width="150px" align="center">{scientist} </td>
+            <td class="freezerTableEntry" width="100px" align="center">{fridge} </td>
+            <td class="freezerTableEntry" width="100px" align="center">{location} </td>
+          </tr>
+        </tbody >
+      </table >
+    </div >
   );
+
 };
 
 export default FoodItem;

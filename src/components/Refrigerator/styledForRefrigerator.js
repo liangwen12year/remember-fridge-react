@@ -5,7 +5,7 @@ import emptyFridgeIllo from "../../img/empty-fridge.svg";
 const FridgeShell = styled.main`
   background-color: var(--containerBg);
   position: relative;
-  max-width: 740px;
+  max-width: 1540px;
   z-index: 1;
   width: 100%;
   box-sizing: border-box;
@@ -16,20 +16,14 @@ const FridgeShell = styled.main`
   transition: all 0.3s;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   .container {
-    max-width: 675px;
+    max-width: 1710px;
     box-sizing: border-box;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 150px);
-    grid-template-rows: 150px;
-    grid-auto-flow: row;
-    grid-gap: 24px;
-    padding-bottom: 40px;
-    transition: all 0.3s;
-    @media screen and (max-width: 375px) {
-      grid-template-columns: repeat(auto-fill, 140px);
-      grid-template-rows: 140px;
-      grid-gap: 20px;
+    }
+  .freezerTableEntry{
+      border: 1px solid white;
+      border-collapse: collapse;
+      height:35px;
     }
   }
   @media screen and (max-width: 960px) {
