@@ -18,11 +18,11 @@ const FoodItem = props => {
         < tbody className="table-body" >
           <tr className="table-row" width="800px">
             <td class="freezerTableEntry" width="200px" align="center" > {name} </td>
-            <td class="freezerTableEntry" width="200px" align="center"> {quantity} </td>
+            <td class="freezerTableEntry" width="150px" align="center"> {quantity} </td>
             <td class="freezerTableEntry" width="550px" align="center"> {description} </td>
             <td class="freezerTableEntry" width="180px" align="center"> {added} </td>
             <td class="freezerTableEntry" width="150px" align="center">{scientist} </td>
-            <td class="freezerTableEntry" width="100px" align="center">{fridge} </td>
+            <td class="freezerTableEntry" width="150px" align="center">{fridge} </td>
             <td class="freezerTableEntry" width="100px" align="center">{location} </td>
           </tr>
         </tbody >

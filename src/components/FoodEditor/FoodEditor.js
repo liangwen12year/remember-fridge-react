@@ -513,7 +513,7 @@ class FoodEditor extends React.Component {
             />
             <TextField
               id="fridge"
-              labelText="Fridge/Freezer ID"
+              labelText="Fridge ID (0x)/Freezer ID (1x)"
               editField={this.editField}
               value={fridge}
             />
