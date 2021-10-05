@@ -57,11 +57,61 @@ const BottomNavBar = ({
       </div>
     </BottomNav>
   );
-function changeBackground(e) {
+function changeBackground01(e) {
+  global.config.fridge = "01";
   e.target.style.background = 'red';
 }
 
-function changeBackground2(e) {
+function changeBackground_back01(e) {
+  e.target.style.background = '#004f6a';
+}
+
+function changeBackground02(e) {
+  global.config.fridge = "02";
+  e.target.style.background = 'red';
+}
+
+function changeBackground_back02(e) {
+  e.target.style.background = '#004f6a';
+}
+
+function changeBackground03(e) {
+  global.config.fridge = "03";
+  e.target.style.background = 'red';
+}
+function changeBackground_back03(e) {
+  e.target.style.background = '#004f6a';
+}
+
+function changeBackground04(e) {
+  global.config.fridge = "04";
+  e.target.style.background = 'red';
+}
+function changeBackground_back04(e) {
+  e.target.style.background = '#004f6a';
+}
+
+function changeBackground05(e) {
+  global.config.fridge = "05";
+  e.target.style.background = 'red';
+}
+function changeBackground_back05(e) {
+  e.target.style.background = '#004f6a';
+}
+
+function changeBackground06(e) {
+  global.config.fridge = "06";
+  e.target.style.background = 'red';
+}
+function changeBackground_back06(e) {
+  e.target.style.background = '#004f6a';
+}
+
+function changeBackground07(e) {
+  global.config.fridge = "07";
+  e.target.style.background = 'red';
+}
+function changeBackground_back07(e) {
   e.target.style.background = '#004f6a';
 }
 
@@ -94,12 +144,13 @@ const SideNavBar = ({
         {isShown && (
           <ButtonGroup>
             <Button
-              onMouseOver={changeBackground}
-              onMouseOut={changeBackground2}
+              onMouseOver={changeBackground01}
+              onMouseOut={changeBackground_back01}
               style={{ height: "50px" }}
               data-id="fridge"
               className={currentSection === "fridge" ? "active" : ""}
-              onClick={sectionChange}>
+              onClick={sectionChange}
+            >
               <img
                 style={{ width: "24px", height: "14px" }}
                 src={fridgeIcon}
@@ -109,8 +160,8 @@ const SideNavBar = ({
 
             </Button>
             <Button
-              onMouseOver={changeBackground}
-              onMouseOut={changeBackground2}
+              onMouseOver={changeBackground02}
+              onMouseOut={changeBackground_back02}
               style={{ height: "50px" }}
               data-id="fridge"
               className={currentSection === "fridge" ? "active" : ""}
@@ -124,8 +175,8 @@ const SideNavBar = ({
 
             </Button>
             <Button
-              onMouseOver={changeBackground}
-              onMouseOut={changeBackground2}
+              onMouseOver={changeBackground03}
+              onMouseOut={changeBackground_back03}
               style={{ height: "50px" }}
               data-id="fridge"
               className={currentSection === "fridge" ? "active" : ""}
@@ -139,8 +190,8 @@ const SideNavBar = ({
 
             </Button>
             <Button
-              onMouseOver={changeBackground}
-              onMouseOut={changeBackground2}
+              onMouseOver={changeBackground04}
+              onMouseOut={changeBackground_back04}
               style={{ height: "50px" }}
               data-id="fridge"
               className={currentSection === "fridge" ? "active" : ""}
@@ -154,8 +205,8 @@ const SideNavBar = ({
 
             </Button>
             <Button
-              onMouseOver={changeBackground}
-              onMouseOut={changeBackground2}
+              onMouseOver={changeBackground05}
+              onMouseOut={changeBackground_back05}
               style={{ height: "50px" }}
               data-id="fridge"
               className={currentSection === "fridge" ? "active" : ""}
@@ -169,8 +220,8 @@ const SideNavBar = ({
 
             </Button>
             <Button
-              onMouseOver={changeBackground}
-              onMouseOut={changeBackground2}
+              onMouseOver={changeBackground06}
+              onMouseOut={changeBackground_back06}
               style={{ height: "50px" }}
               data-id="fridge"
               className={currentSection === "fridge" ? "active" : ""}
@@ -184,8 +235,8 @@ const SideNavBar = ({
 
             </Button>
             <Button
-              onMouseOver={changeBackground}
-              onMouseOut={changeBackground2}
+              onMouseOver={changeBackground07}
+              onMouseOut={changeBackground_back07}
               style={{ height: "50px" }}
               data-id="fridge"
               className={currentSection === "fridge" ? "active" : ""}
